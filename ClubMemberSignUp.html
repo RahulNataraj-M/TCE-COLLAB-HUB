@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>Club Member Sign Up</title>
+<style>
+body {
+background: linear-gradient(135deg, #0f172a, #1e3a8a);
+padding: 40px;
+display: flex;
+flex-direction: column;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+}
+.brand {
+position: absolute;
+top: 5px;
+left: 5px;
+font-weight: 700;
+color: #ffffff;
+letter-spacing: 1px;
+font-size: 25px;
+text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+display: flex;
+align-items: center;
+gap: 12px;
+line-height: 1;
+}
+.brand img {
+height: 80px;
+width: auto;
+margin-top: 10px;
+}
+form {
+background-color: white;
+padding: 40px 48px;
+border-radius: 16px;
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+width: min(640px, 92vw);
+font-size: 16px;
+margin: 20px 0;
+}
+h1 {
+text-align: center;
+margin-top: 60px;
+margin-bottom: 32px;
+font-size: 36px;
+color: #ffffff;
+font-weight: 600;
+text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+table {
+width: 100%;
+}
+table td {
+padding: 10px 8px;
+vertical-align: middle;
+}
+table td:first-child {
+font-weight: 500;
+color: #374151;
+width: 160px;
+}
+input, select, textarea {
+width: 100%;
+padding: 12px 14px;
+font-size: 15px;
+border: 2px solid #e5e7eb;
+border-radius: 8px;
+transition: all 0.3s ease;
+font-family: inherit;
+box-sizing: border-box;
+}
+textarea {
+resize: vertical;
+min-height: 80px;
+}
+input:focus, select:focus, textarea:focus {
+outline: none;
+border-color: #3b82f6;
+box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+input[type="submit"], input[type="reset"] {
+width: auto;
+padding: 12px 28px;
+margin-right: 10px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+input[type="submit"] {
+background: linear-gradient(135deg, #3b82f6, #2563eb);
+color: white;
+border: none;
+}
+input[type="submit"]:hover {
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+input[type="reset"] {
+background: white;
+color: #6b7280;
+border: 2px solid #e5e7eb;
+}
+input[type="reset"]:hover {
+background: #f9fafb;
+border-color: #d1d5db;
+}
+.checkbox-group {
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.checkbox-group input[type="checkbox"] {
+width: auto;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="brand"><img src="TCE_COLLAB_HUB_LOGO.png" alt="TCE Logo">TCE COLLAB HUB</div>
+<h1>Club Member Sign Up</h1>
+<form>
+<table>
+<tr>
+<td>Full Name:</td><td><input type="text" placeholder="Enter your full name"></td>
+</tr>
+<tr>
+<td>Student ID:</td><td><input type="text" placeholder="Enter your student ID"></td>
+</tr>
+<tr>
+<td>Year:</td><td><select>
+<option value="">Select Year</option>
+<option value="1st">1st year</option>
+<option value="2nd">2nd year</option>
+<option value="3rd">3rd year</option>
+<option value="4th">4th year</option>
+</select></td>
+</tr>
+<tr>
+<td>Department:</td><td><select>
+<option value="">Select Department</option>
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+<option value="Mechatronics">Mechatronics</option>
+<option value="IT">IT</option>
+<option value="Data Science">Data Science</option>
+<option value="Civil">Civil</option>
+<option value="Mechanical">Mechanical</option>
+<option value="CSBS">CSBS</option>
+<option value="EEE">EEE</option>
+</select></td>
+</tr>
+<tr>
+<td>Club Category:</td><td><select>
+<option value="">Select Club Category</option>
+<option value="Technical">Technical Club</option>
+<option value="Cultural">Cultural Club</option>
+<option value="Sports">Sports Club</option>
+<option value="Social">Social Service Club</option>
+<option value="Arts">Arts & Literature Club</option>
+<option value="Entrepreneurship">Entrepreneurship Club</option>
+</select></td>
+</tr>
+<tr>
+<td>Club Name:</td><td><input type="text" placeholder="Enter the club name"></td>
+</tr>
+<tr>
+<td>Role:</td><td><select>
+<option value="">Select Role</option>
+<option value="Member">Member</option>
+<option value="Volunteer">Volunteer</option>
+<option value="Core Team">Core Team Member</option>
+<option value="Lead">Lead Position</option>
+</select></td>
+</tr>
+<tr>
+<td>Email:</td><td><input type="email" placeholder="Enter your email"></td>
+</tr>
+<tr>
+<td>Phone no.:</td><td><input type="tel" placeholder="Enter your phone number"></td>
+</tr>
+<tr>
+<td>Password:</td><td><input type="password" placeholder="Create a password"></td>
+</tr>
+<tr>
+<td>Confirm Password:</td><td><input type="password" placeholder="Re-enter your password"></td>
+</tr>
+<tr>
+<td></td><td>
+<div class="checkbox-group">
+<input type="checkbox" id="terms">
+<label for="terms">I agree to the club terms and conditions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td></td><td><input type="submit" value="Sign Up"> <input type="reset" value="Clear"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
