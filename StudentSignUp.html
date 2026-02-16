@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Simple Form</title>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <style>
 body {
 background: linear-gradient(135deg, #0f172a, #1e3a8a);
@@ -10,7 +11,7 @@ flex-direction: column;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 justify-content: center;
 align-items: center;
-height: 100vh;
+min-height: 100vh;
 margin: 0;
 }
 .brand {
@@ -24,7 +25,7 @@ font-size: 25px;
 text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 display: flex;
 align-items: center;
-gap: 12px;
+gap: 0px;
 line-height: 1;
 }
 .brand img {
@@ -39,10 +40,11 @@ border-radius: 16px;
 box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 width: min(640px, 92vw);
 font-size: 16px;
+margin: 20px 0;
 }
 h1 {
 text-align: center;
-margin-top: 0;
+margin-top: 60px;
 margin-bottom: 32px;
 font-size: 36px;
 color: #ffffff;
@@ -59,7 +61,7 @@ vertical-align: middle;
 table td:first-child {
 font-weight: 500;
 color: #374151;
-width: 140px;
+width: 160px;
 }
 input, select {
 width: 100%;
@@ -105,9 +107,10 @@ border-color: #d1d5db;
 </style>
 </head>
 <body>
-<div class="brand"><img src="TCE_COLLAB_HUB_LOGO.png" alt="TCE Logo">TCE COLLAB HUB</div>
+<div class="brand"><img src="TCE_COLLAB_HUB_LOGO.png" alt="TCE Logo">
+TCE COLLAB HUB</div>
 <h1>Student Sign Up</h1>
-<form>
+<form method="POST" action="/verify">
 <table>
 <tr>
 <td>Name:</td><td><input type="text" placeholder="Enter the name"></td>
@@ -146,6 +149,9 @@ border-color: #d1d5db;
 </tr>
 <tr>
 <td>Phone no.:</td><td><input type="tel" placeholder="Enter the phone no."></td>
+</tr>
+<tr>
+<td>Verification:</td><td><div class="g-recaptcha" data-sitekey="6LcCJ20sAAAAADk116EMWu9f3wwbuL_D0n8zCiSp"></div></td>
 </tr>
 <tr>
 <td></td><td><input type="submit"> <input type="reset"></td>

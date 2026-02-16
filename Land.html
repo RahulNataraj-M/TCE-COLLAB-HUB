@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TCE COLLAB HUB</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#0f172a,#0b2440);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* Header */
+header{
+    width:100%;
+    padding:20px;
+    padding-left:50px;
+    text-align:left;
+    font-size:28px;
+    font-weight:bold;
+    background:#0b1220;
+    box-shadow:0 2px 10px rgba(0,0,0,0.5);
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+header img{
+    height:80px;
+    width:auto;
+}
+
+/* Center container */
+.container{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* Cards */
+.card{
+    background:#1e293b;
+    padding:40px;
+    width:220px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#2563eb;
+}
+
+/* Buttons */
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    background:white;
+}
+
+button:hover{
+    background:#e5e7eb;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="TCE_COLLAB_HUB_LOGO.png" alt="TCE Logo">
+    TCE COLLAB HUB
+</header>
+
+<div class="container">
+
+    <div class="card" onclick="login('Student')">
+        <h2>Student Login</h2>
+        <p>Access hackathons & teams</p>
+    </div>
+
+    <div class="card" onclick="login('Club Member')">
+        <h2>Club Members</h2>
+        <p>Manage club activities</p>
+    </div>
+
+    <div class="card" onclick="login('Admin')">
+        <h2>Admin Board</h2>
+        <p>Control dashboard</p>
+    </div>
+
+</div>
+
+<script>
+function login(type){
+    alert(type + " login clicked!");
+    // later you can redirect:
+    // window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
