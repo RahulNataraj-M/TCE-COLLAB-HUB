@@ -110,13 +110,13 @@ border-color: #d1d5db;
 <div class="brand"><img src="TCE_COLLAB_HUB_LOGO.png" alt="TCE Logo">
 TCE COLLAB HUB</div>
 <h1>Student Sign Up</h1>
-<form method="POST" action="/verify">
+<form method="POST" action="/signup">
 <table>
 <tr>
-<td>Name:</td><td><input type="text" placeholder="Enter the name"></td>
+<td>Name:</td><td><input type="text" name="name" placeholder="Enter the name"></td>
 </tr>
 <tr>
-<td>Year:</td><td><select>
+<td>Year:</td><td><select name="year">
 <option value="">Select Year</option>
 <option value="1st">1st year</option>
 <option value="2nd">2nd year</option>
@@ -125,7 +125,7 @@ TCE COLLAB HUB</div>
 </select></td>
 </tr>
 <tr>
-<td>Department:</td><td><select>
+<td>Department:</td><td><select name="department">
 <option value="">Select Department</option>
 <option value="CSE">CSE</option>
 <option value="ECE">ECE</option>
@@ -139,16 +139,16 @@ TCE COLLAB HUB</div>
 </select></td>
 </tr>
 <tr>
-<td>Email:</td><td><input type="email" placeholder="Enter the email"></td>
+<td>Email:</td><td><input type="email" name="email" placeholder="Enter the email"></td>
 </tr>
 <tr>
-<td>Password:</td><td><input type="password" placeholder="Create a password"></td>
+<td>Password:</td><td><input type="password" name="password" placeholder="Create a password"></td>
 </tr>
 <tr>
-<td>Confirm Password:</td><td><input type="password" placeholder="Re-enter your password"></td>
+<td>Confirm Password:</td><td><input type="password" name="confirm_password" placeholder="Re-enter your password"></td>
 </tr>
 <tr>
-<td>Phone no.:</td><td><input type="tel" placeholder="Enter the phone no."></td>
+<td>Phone no.:</td><td><input type="tel" name="phone" placeholder="Enter the phone no."></td>
 </tr>
 <tr>
 <td>Verification:</td><td><div class="g-recaptcha" data-sitekey=""></div></td>
