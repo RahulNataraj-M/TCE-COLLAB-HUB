@@ -3,7 +3,7 @@ import requests
 import os
 app = Flask(__name__, template_folder='.')
 
-SECRET_KEY = "6LcCJ20sAAAAABdLlF8UGun1Da9vuurPYDiqUHgf"
+SECRET_KEY =""
 
 # HOME PAGE
 @app.route('/')
